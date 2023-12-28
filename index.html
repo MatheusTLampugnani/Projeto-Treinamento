@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>AVALIÇÃO DE TREINAMENTO</title>
+        <link rel="icon" type="image/x-icon" href="C:/Users/matheus.teixeira/Downloads/favicon.ico">
+        <link rel="stylesheet" href="main.css"/>
+        <script src="main.py"> </script>
+    </head>
+    <body>
+        <div class="corpo1">
+            <div class="corpo">
+                <h1><br>AVALIÇÃO DE REAÇÃO DE<br>TREINAMENTO/ENTREGA TÉCNICA</h1>
+                <p class="p1">Esta é uma avaliação de entrega técnica e ou treinamento de operação de veículos<br>
+                    Mercedes Benz em que você participou, esta avalição não obrigatória. Mas muito <br>
+                    importante para melhorarmos nosso processo com sua opinião.<br><br>
+                    Treinamentos realizados pelo Instrutor de Operação Adelar Lampugnani.<br>
+                    Rodobens Rio Verde/ Jataí Goiás<br>
+                    Contato: (64)99296-1530
+                </p>
+            </div>
+            <!--NOME CONDUTOR-->
+                <div class="corpo">
+                        <p class="p">Nome Completo</p>
+                        <br>
+                        <input class="name" type="text" id="nome" name="nome_condutor"> 
+                </div>
+                <!--NOME DA EMPRESA-->
+                <div class="corpo">
+                    <p class="p">Empresa</p>
+                    <br>
+                    <input class="name" type="text" id="empresa" name="nome_empresa">
+                </div>
+                <!--VEICULO USADO-->
+                <div class="corpo">
+                    <p class="p">Veiculo usado no treinamento</p>
+                    <br>
+                    <input class="name" type="text" id="veiculo" name="veiculo_usado">
+                </div>
+                <div class="corpo">
+                    <form>
+                        <p class="p">Data do treinamento</p>
+                        <br>
+                        <input class="data-treinamento" type="date" id="birthday" name="data_treinamento">
+                    </form>
+                </div>
+                </form>
+            <!--TIPO DE TREINAMENTO-->
+            <div class="corpo">
+                <p class="p">Tipo de Treinamento</p>
+                <input class="botao-tipo-treinamento" type="radio" id="entrega" name="treinamento" value="entrega_tecnica">
+                <label class="tipo-treinamento" for="entrega">Entrega Técnica</label>
+                <br>
+                <input class="botao-tipo-treinamento" type="radio" id="instrucao" name="treinamento" value="instrucao_operacao">
+                <label class="tipo-treinamento" for="instrucao">Instrução de Operação</label>
+                <br>
+            </div>
+            <!--MODELO CAMINHAO-->
+            <div class="corpo">
+                <p class="p">Modelo do Caminhão</p>
+                <form>
+                    <input class="botao-tipo-treinamento" type="radio" id="sprinter" name="caminhao" value="caminhao">
+                    <label class="tipo-treinamento" for="sprinter">Sprinter</label>
+                    <br>
+                    <input class="botao-tipo-treinamento" type="radio" id="accelo" name="caminhao" value="caminhao">
+                    <label class="tipo-treinamento" for="accelo">Accelo</label>
+                    <br>
+                    <input class="botao-tipo-treinamento" type="radio" id="atego" name="caminhao" value="caminhao">
+                    <label class="tipo-treinamento" for="atego">Atego</label>
+                    <br>
+                    <input class="botao-tipo-treinamento" type="radio" id="axor" name="caminhao" value="caminhao">
+                    <label class="tipo-treinamento" for="axor">Axor</label>
+                    <br>
+                    <input class="botao-tipo-treinamento" type="radio" id="actros_classico" name="caminhao" value="caminhao">
+                    <label class="tipo-treinamento" for="actros_classico">Actros Clássico</label>
+                    <br>
+                    <input class="botao-tipo-treinamento" type="radio" id="new_actros" name="caminhao" value="caminhao">
+                    <label class="tipo-treinamento" for="new_actros">New Actros</label>
+                    <br>
+                    <input class="botao-tipo-treinamento" type="radio" id="onibus" name="caminhao" value="caminhao">
+                    <label class="tipo-treinamento" for="onibus">Ônibus</label>
+                    <br>
+            </div>
+            <!--CONHECIMENTOS-->
+            <div class="corpo">
+                <p class="p">Seus conhecimentos anteriores a este treinamento</p>
+                <input class="botao-tipo-treinamento" type="radio" id="Nenhum" name="conhecimento" value="conhecimento-treinamento">
+                <label class="tipo-treinamento" for="Nenhum">Nenhum</label>
+                <br>
+                <input class="botao-tipo-treinamento" type="radio" id="Pouco" name="conhecimento" value="conhecimento-treinamento">
+                <label class="tipo-treinamento" for="Pouco">Pouco</label>
+                <br>
+                <input class="botao-tipo-treinamento" type="radio" id="Bons" name="conhecimento" value="conhecimento-treinamento">
+                <label class="tipo-treinamento" for="Bons">Bons</label>
+                <br>
+                <input class="botao-tipo-treinamento" type="radio" id="Dominava" name="conhecimento" value="conhecimento-treinamento">
+                <label class="tipo-treinamento" for="Dominava">Dominava</label>
+                <br>
+            </div>
+            <div><br><br>
+                <button class="botao">
+                    Proximo
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
