@@ -7,11 +7,28 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.botao-tipo-treinamento{
+    margin-left: 50px;
+    width: 20px;
+    height: 25px;
+    vertical-align: middle;
+}
+
 .corpo1{
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
     padding-top: 5px;
     padding-bottom: 30px;
+}
+
+.botao{
+    font-size: 15px;
+    background-color: rgba(118, 118, 118);
+    border-radius: 15px;
+    height: 35px;
+    width: 110px;
+    margin-left: 44%;
+    border-color: aliceblue;
 }
 
 .corpo{
@@ -22,10 +39,46 @@ body{
     border-radius: 50px;
 }
 
+.comentario{
+    padding-top: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+.comentario-motorista{
+    width: 800px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: aliceblue;
+}
+
+.data-treinamento{
+    font-size: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.empresa{
+    width: 500px;
+    padding-top: 15px;
+    text-align: center;
+}
+
 h1{
     color: aliceblue;
     font-size: 30px;
     text-align: center;
+}
+
+.name{
+    width: 450px;
+    padding-top: 7px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: aliceblue;
 }
 
 p{
@@ -43,61 +96,9 @@ p{
     text-decoration: underline;
 }
 
-.name{
-    width: 450px;
-    padding-top: 7px;
-    margin-left: 50px;
-    border-radius: 10px;
-    background-color: aliceblue;
-}
-
-.empresa{
-    width: 500px;
-    padding-top: 15px;
-    text-align: center;
-}
-
-.botao-tipo-treinamento{
-    margin-left: 50px;
-    width: 20px;
-    height: 25px;
-    vertical-align: middle;
-}
 .tipo-treinamento{
     color: white;
     padding-top: 100px;
     vertical-align: middle;
     font-size: 20px;
-}
-
-.botao{
-    font-size: 15px;
-    background-color: rgba(118, 118, 118);
-    border-radius: 15px;
-    height: 35px;
-    width: 110px;
-    margin-left: 44%;
-    border-color: aliceblue;
-}
-
-.data-treinamento{
-    font-size: 20px;
-    margin-left: 50px;
-    border-radius: 10px;
-}
-
-.comentario{
-    padding-top: 15px;
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    margin-left: 50px;
-}
-
-.comentario-motorista{
-    width: 800px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    border-radius: 10px;
-    font-size: 22px;
-    background-color: aliceblue;
 }
