@@ -66,9 +66,3 @@ def inserir_usuario(nome_condutor,
     except mysql.connector.Error as err:
         conexao.rollback()
         print(f"Erro: {err}")
-
-
-inserir_usuario('Matheus',
-            'volus',
-            'Supra mk3',
-            '28/12/2023')
