@@ -95,8 +95,9 @@ p{
 }
 
 .comentario-motorista{
-    padding-bottom: 50px;
-    color: rgb(0,0,0);
-    font-size: 12px;
+    width: 450px;
+    padding-top: 7px;
     margin-left: 50px;
+    border-radius: 10px;
+    background-color: aliceblue;
 }
