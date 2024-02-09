@@ -29,12 +29,23 @@ def adicionar_usuario():
         nome_empresa = request.form['nome_empresa']
         veiculo_usado = request.form['veiculo_usado']
         data_treinamento = request.form['data_treinamento']
+        treinamento = request.form['treinamento']
+        caminhao = request.form['caminhao']
+        conhecimento = request.form['conhecimento']
+        organizacao = request.form['organizacao']
+        instalacoes = request.form['instalacoes']
+        conteudo = request.form['conteudo']
+        qualidade = request.form['qualidade']
+        avaliacao = request.form['avaliacao']
+        instrutor = request.form['instrutor']
+        comentario = request.form['comentario']
 
         conexao = conectar()
         cursor = conexao.cursor()
 
         try:
-            cursor.execute('INSERT INTO usuarios (nome_condutor,nome_empresa, veiculo_usado,data_treinamento) VALUES (%s, %s, %s, %s)'(nome_condutor, nome_empresa, veiculo_usado, data_treinamento))
+            cursor.execute('INSERT INTO usuarios (nome_condutor,nome_empresa, veiculo_usado,data_treinamento, treinamento, caminhao, conhecimento, organizacao, instalacoes, conteudo, qualidade, avaliacao, instrutor, comentario) VALUES (%s, %s, %s, %s,%s, %s, %s, %s,%s, %s))'
+                           'VALUES (%s, %s, %s, %s)'(nome_condutor, nome_empresa, veiculo_usado, data_treinamento,treinamento, caminhao, conhecimento, organizacao, instalacoes, conteudo, qualidade, avaliacao, instrutor, comentario))
             conexao.commit()
         except mysql.connector.Error as err:
             print(f"Erro ao adicionar usuário: {err}")
@@ -47,18 +58,38 @@ def adicionar_usuario():
 def inserir_usuario(nome_condutor,
             nome_empresa,
             veiculo_usado,
-            data_treinamento):
+            data_treinamento,
+            treinamento,
+            caminhao,
+            conhecimento,
+            organizacao,
+            instalacoes,
+            conteudo,
+            qualidade,
+            avaliacao,
+            instrutor,
+            comentario):
     # Função para inserir um novo usuário
     conexao = conectar()
     cursor = conexao.cursor()
 
     try:
         # Exemplo de inserção de dados
-        insercao_sql = "INSERT INTO usuarios (nome_condutor,nome_empresa, veiculo_usado,data_treinamento) VALUES (%s, %s, %s, %s)"
+        insercao_sql = "INSERT INTO usuarios (nome_condutor, nome_empresa, veiculo_usado, data_treinamento, treinamento, caminhao, conhecimento, organizacao, instalacoes, conteudo, qualidade, avaliacao, instrutor, comentario) VALUES (%s, %s, %s, %s,%s, %s, %s, %s,%s, %s)"
         dados_usuario = (nome_condutor,
             nome_empresa,
             veiculo_usado,
-            data_treinamento)
+            data_treinamento,
+            treinamento,
+            caminhao,
+            conhecimento,
+            organizacao,
+            instalacoes,
+            conteudo,
+            qualidade,
+            avaliacao,
+            instrutor,
+            comentario)
         cursor.execute(insercao_sql, dados_usuario)
         conexao.commit()
         print("Usuário inserido com sucesso!")
