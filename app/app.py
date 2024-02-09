@@ -23,6 +23,16 @@ def submit():
         nome_empresa = request.form['nome_empresa']
         veiculo_usado = request.form['veiculo_usado']
         data_treinamento = request.form['data_treinamento']
+        treinamento = request.form['treinamento']
+        caminhao = request.form['caminhao']
+        conhecimento = request.form['conhecimento']
+        organizacao = request.form['organizacao']
+        instalaceos = request.form['instalaceos']
+        conteudo = request.form['conteudo']
+        qualidade = request.form['qualidade']
+        avaliacao = request.form['avaliacao']
+        instrutor = request.form['instrutor']
+        comentario = request.form['comentario']
 
         # Insere os dados no banco de dados
         sql = "INSERT INTO usuarios (nome_condutor, nome_empresa, veiculo_usado, data_treinamento) VALUES (%s, %s, %s, %s)"
