@@ -27,7 +27,7 @@ def submit():
         caminhao = request.form['caminhao']
         conhecimento = request.form['conhecimento']
         organizacao = request.form['organizacao']
-        instalaceos = request.form['instalaceos']
+        instalaceos = request.form['instalacoes']
         conteudo = request.form['conteudo']
         qualidade = request.form['qualidade']
         avaliacao = request.form['avaliacao']
