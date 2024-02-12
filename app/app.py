@@ -35,8 +35,8 @@ def submit():
         comentario = request.form['comentario']
 
         # Insere os dados no banco de dados
-        sql = "INSERT INTO usuarios (nome_condutor, nome_empresa, veiculo_usado, data_treinamento, treinamento, caminhao, conhecimento, organizacao, instalacoes, conteudo, qualidade, avaliacao, instrutor, comentario) VALUES (%s, %s, %s, %s,%s, %s, %s, %s,%s, %s)"
-        val = (nome_condutor, nome_empresa, veiculo_usado, data_treinamento,treinamento, caminhao, conhecimento, organizacao, instalacoes, conteudo, qualidade, avaliacao, instrutor, comentario)
+        sql = "INSERT INTO usuarios (nome_condutor, nome_empresa, veiculo_usado, data_treinamento, treinamento, caminhao, conhecimento, organizacao, instalacoes, conteudo, qualidade, avaliacao, instrutor, comentario) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        val = (nome_condutor, nome_empresa, veiculo_usado, data_treinamento, treinamento, caminhao, conhecimento, organizacao, instalacoes, conteudo, qualidade, avaliacao, instrutor, comentario)
         cursor.execute(sql, val)
         db.commit()
 
